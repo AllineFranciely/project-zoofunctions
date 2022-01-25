@@ -11,3 +11,5 @@ function getEmployeeByName(employeeName) {
 }
 
 module.exports = getEmployeeByName;
+// find procura o primeiro elemento que satisfaça a condição(name === name)
+// return dentro da função find retornou true ou false.
