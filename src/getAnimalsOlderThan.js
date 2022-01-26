@@ -1,7 +1,7 @@
 const data = require('../data/zoo_data');
 
 function getAnimalsOlderThan(animal, age) {
-  const arrayAnimais = data.species.find((species) => species.name === animal);
+  const arrayAnimais = data.species.find((species) => species.name === animal); // find encontra o primeiro elemento que satisfaz a condição.
   const idadeAnimais = arrayAnimais.residents.every((ages) => ages.age > age);// every retorna true se todos os valores do elemento satisfazem a condição.
   return idadeAnimais;
 }

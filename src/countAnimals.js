@@ -8,12 +8,12 @@ function countAnimals(animal) {
     });
     return obj;
   }
-  const bixos = data.species.find((bixo) => bixo.name === animal.specie);
+  const bixos = data.species.find((bixo) => bixo.name === animal.specie); // find encontra o primeiro elemento que satisfaz a condição.
   if (!animal.sex) {
     return bixos.residents.length;
   }
   let bixosSex = 0;
-  bixos.residents.forEach((resident) => {
+  bixos.residents.forEach((resident) => { // forEach faz o loop mas não retorna nada.
     if (resident.sex === animal.sex) {
       bixosSex += 1;
     }
