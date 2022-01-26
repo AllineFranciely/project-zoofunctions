@@ -1,7 +1,11 @@
 const data = require('../data/zoo_data');
 
 function countEntrants(entrants) {
-  const entrantsTotal = { child: 0, adult: 0, senior: 0 };
+  const entrantsTotal = {
+    child: 0,
+    adult: 0,
+    senior: 0,
+  };
   entrants.forEach((entrant) => { // forEach faz o loop mas não retorna nada.
     if (entrant.age < 18) {
       entrantsTotal.child += 1;
@@ -21,7 +25,7 @@ function calculateEntry(entrants) {
     return 0;
   }
   const { prices } = data; // sem as chaves é necessário usar o data.prices. Dúvida esclarecida na mentoria do Lucas.
-  console.log(prices);
+  // console.log(prices);
   const entrantsObj = countEntrants(entrants);
   const childEntry = entrantsObj.child * prices.child;
   const adultEntry = entrantsObj.adult * prices.adult;
