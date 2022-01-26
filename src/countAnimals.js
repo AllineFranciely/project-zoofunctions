@@ -3,7 +3,7 @@ const data = require('../data/zoo_data');
 function countAnimals(animal) {
   if (!animal) {
     const obj = {};
-    data.species.forEach((specie) => {
+    data.species.forEach((specie) => { // forEach faz o loop mas não retorna valor.
       obj[specie.name] = specie.residents.length;
     });
     return obj;

@@ -9,7 +9,7 @@ function getRelatedEmployees(managerId) {
     return data.employees.filter((employee) => employee.managers // retorna outro array com todos os elementos que satisfazem a condição.
       .some((id) => id === managerId))
       .map((name) => `${name.firstName} ${name.lastName}`); // devolve um novo array com os ele e invoca a função callback passada para cada elemento do array original.
-  } throw new Error('O id inserido não é de uma pessoa colaboradora gerente!');
+  } throw new Error('O id inserido não é de uma pessoa colaboradora gerente!'); // error cria um obejeto de erro, no caso para uma exceção definida na função.
 }
 
 module.exports = { isManager, getRelatedEmployees };

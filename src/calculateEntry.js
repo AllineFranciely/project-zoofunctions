@@ -17,7 +17,7 @@ function countEntrants(entrants) {
 }
 
 function calculateEntry(entrants) {
-  if (typeof entrants === 'undefined' || Object.keys(entrants).length === 0) {
+  if (typeof entrants === 'undefined' || Object.keys(entrants).length === 0) { // object.keys retorna um array com as propriedades enumeráveis do objeto ['0' '1'].
     return 0;
   }
   const { prices } = data; // sem as chaves é necessário usar o data.prices. Dúvida esclarecida na mentoria do Lucas.
