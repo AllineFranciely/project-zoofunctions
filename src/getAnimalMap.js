@@ -14,8 +14,13 @@ function getAnimalMap(options) {
       if (animal.location === 'SE') animalMap.SE.push(animal.name);
       if (animal.location === 'SW') animalMap.SW.push(animal.name);
     });
+
     return animalMap;
   } */
 }
-
+/* data.species.map((specie) =>
+    if (specie.location === 'NE') {
+    return animal.name;
+    }
+    ) */
 module.exports = getAnimalMap;

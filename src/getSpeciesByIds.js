@@ -5,6 +5,6 @@ function getSpeciesByIds(...ids) { // spread para que o parâmetro possa receber
     return [];
   }
   return data.species.filter((specie) => ids.includes(specie.id)); // filter retorna outro array com todos os elementos que satisfazem a condição.
-} // include determina se o array contém um determinado elemento, no caso id. Logo a função vai retornar todos os elementos em que ID estiver incluso na espécie.
+} // includes determina se o array contém um determinado elemento, no caso id. Logo a função vai retornar todos os elementos em que ID estiver incluso na espécie.
 
 module.exports = getSpeciesByIds;

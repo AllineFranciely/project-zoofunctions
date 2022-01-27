@@ -21,3 +21,4 @@ function countAnimals(animal) {
   return bixosSex;
 }
 module.exports = countAnimals;
+// console.log(countAnimals());

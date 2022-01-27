@@ -14,13 +14,13 @@ function getSpecies(employee) {
 }
 
 function getAllEmployees() {
-  return data.employees.map((employee) => {
+  return data.employees.map((employee) => { // map junta no array todas as especies com o id correspondente.
     const species = getSpecies(employee);
     return {
       id: employee.id,
       fullName: `${employee.firstName} ${employee.lastName}`,
-      species: species.map((specie) => specie.name),
-      locations: species.map((specie) => specie.location),
+      species: species.map((specie) => specie.name), // map junta no array todas as especies com o id correspondente.
+      locations: species.map((specie) => specie.location), // map junta no array todas as especies com o id correspondente.
     };
   });
 }
